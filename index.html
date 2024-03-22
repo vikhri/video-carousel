@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video-carousel</title>
+  </head>
+  <body>
+  <div class="video-carousel__wrapper">
+    <div class="video-carousel">
+      <div class="video-carousel__header">
+      <a href="/" class="video-carousel__button">Buy a ticket</a>
+      <div id="video-container" class="video-carousel__videos">
+        <div class="video-carousel__video-wrapper">
+          <video id="video1" class="js-carousel-video video-carousel__video is-current" src="video1.mp4" preload="auto" muted class="is-current"></video>
+          <span class="video-carousel__caption">The total area of the reserve spans across 15 square kilometers, providing ample space for diverse ecosystems and wildlife habitats to thrive.</span>
+        </div>
+        <div class="video-carousel__video-wrapper">
+          <video id="video2" class="js-carousel-video video-carousel__video" src="video2.mp4" preload="auto" muted ></video>
+          <span class="video-carousel__caption">Visitors can explore the beauty of the reserve through seven distinct hiking trails, each offering unique landscapes and opportunities for adventure.</span>
+        </div>
+        <div class="video-carousel__video-wrapper">
+          <video id="video3" class="js-carousel-video video-carousel__video" src="video3.mp4" preload="auto" muted ></video>
+          <span class="video-carousel__caption">With 25 different bird species calling the reserve home, birdwatchers and nature enthusiasts alike can enjoy a rich diversity of avian life within its boundaries.</span>
+        </div>
+      </div>
+    </div>
+      <div class="video-carousel__progress">
+      <div class="video-tab js-video-tab">
+        <div class="video-tab__content">
+          <span class="video-tab__number">15 km<sup>2</sup></span>
+          <span class="video-tab__text">total area of the reserve</span>
+        </div>
+        <div id="progress1" class="js-progress-indicator video-tab__indicator animated" style="width: 0"></div>
+      </div>
+      <div class="video-tab js-video-tab">
+        <div class="video-tab__content">
+          <span class="video-tab__number">7</span>
+          <span class="video-tab__text">trekking trails</span>
+        </div>
+        <div id="progress2" class="js-progress-indicator video-tab__indicator" style="width: 0"></div>
+      </div>
+      <div class="video-tab js-video-tab">
+        <div class="video-tab__content">
+          <span class="video-tab__number">25</span>
+          <span class="video-tab__text">bird species</span>
+        </div>
+        <div id="progress3" class="js-progress-indicator video-tab__indicator" style="width: 0"></div>
+      </div>
+    </div>
+    </div>
+  </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
