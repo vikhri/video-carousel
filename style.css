@@ -1,5 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 
 .video-carousel__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100dvh;
   padding: 24px;
   background-color: #242424;
   container-type: inline-size;
@@ -11,7 +21,6 @@
   flex-direction: column;
   row-gap: 1em;
   max-width: 1000px;
-  margin: 200px auto;
   font-size: 24px;
 }
 
@@ -30,8 +39,6 @@
     font-size: 13px;
   }
 }
-
-
 
 .video-carousel__header {
    position: relative;
@@ -160,7 +167,7 @@
    left: 0;
    width: 100%;
    height: 100%;
-   padding: 1em;
+   padding: 0.7em;
    display: flex;
    flex-direction: column;
    row-gap: 0.4em;
