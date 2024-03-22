@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .video-carousel__wrapper {
@@ -20,7 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 1em;
-  max-width: 1000px;
+  max-width: 800px;
   font-size: 24px;
 }
 
